@@ -45,6 +45,7 @@ body {
     width: 60%; 
     display: flex;
     flex-wrap: wrap; 
+    position: relative;
 }
 
 .header-title {
@@ -139,8 +140,8 @@ body {
 
 .img-ring {
 	position: absolute;
-    top: calc(50% - 161px);
-    left: 49%; 
+    top: calc(50% - 100px);
+    right: -180px;
 }
 
 .ringpng {
