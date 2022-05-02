@@ -429,6 +429,12 @@ grid-row-gap: 20px;
     left: 10%;
     margin: 20px;
 }
+.grid-border {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    margin: 30px;
+}
 
 .grid-color {
     background-color: #EDEDED;
@@ -437,7 +443,8 @@ grid-row-gap: 20px;
 
 .grid-center {
 	width: 100%;
-	min-width: 650px;
+	height: 100%;
+    object-fit: cover;
 }
 
 .grid-size1 {
