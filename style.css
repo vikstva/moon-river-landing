@@ -128,14 +128,24 @@ body {
     margin-bottom: 20px;
 }
 
-.buttons-container {
+.menu-container {
 	display: flex;
+    padding: 10%;
     width: 100%;
+    align-items: flex-start;
     justify-content: center;
+    height: 3%;
 }
 
-.button {
-	padding: 70px 27px;
+.menu-item {
+	display: flex;
+    min-width: 14%;
+    justify-content: space-around;
+    max-height: 100%;
+}
+
+.burger-menu {
+    padding: 0% 0% 0% 10%;
 }
 
 .img-ring {
@@ -217,17 +227,16 @@ body {
 	display: flex;
 }
 
-.man {
+.gender-item {
     position: relative;
     text-align: center;
     padding-right: 20px;
-    width: 50%
+    width: 50%;
+    cursor: pointer;
 }
 
-.woman {
-    position: relative;
-    text-align: center;
-    width: 50%;
+.gender div:last-child {
+    padding-right: 0px;
 }
 
 .man-text {
@@ -328,7 +337,6 @@ body {
 .wrapper {
 	max-width: 400px;
     display: flex;
-    height: 250px;
     margin: 155px;
     flex-wrap: wrap;
     align-content: space-between;
@@ -393,11 +401,11 @@ body {
 }
 
 .wrapper-grid {
-display: grid;
-grid-template-columns: repeat(7, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 20px;
-grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 .box1 { grid-area: 1 / 1 / 2 / 3; }
@@ -519,10 +527,14 @@ grid-row-gap: 20px;
     width: 100%;
 }
 
-.icon-link {
+.icon-links {
 	display: flex;
     width: 50%;
     align-items: center;
+}
+
+.slider img {
+    cursor: pointer;
 }
 
 .point {
@@ -648,8 +660,8 @@ grid-row-gap: 20px;
     justify-content: center;
 }
 
-.logo-footer {
-
+.social-link, .store-item, .menu-item-icon {
+    cursor: pointer;
 }
 
 .nomber-footer {
