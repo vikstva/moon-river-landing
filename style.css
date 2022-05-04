@@ -323,10 +323,6 @@ body {
     padding: 10px 0px;
 }
 
-.pointer {
-	cursor: pointer;
-}
-
 .wrapper-line {
 	display: flex;
     align-items: center;
@@ -660,7 +656,7 @@ body {
     justify-content: center;
 }
 
-.social-link, .store-item, .menu-item-icon {
+.social-link, .store-item, .menu-item-icon, .pointer {
     cursor: pointer;
 }
 
