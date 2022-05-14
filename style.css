@@ -1,33 +1,42 @@
 @font-face {
 	font-family: 'Segoe UI';
-	src: url('SegoeUI-Light.eot');
-	src: local('Segoe UI Light'), local('SegoeUI-Light'),
-		url('SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
-		url('SegoeUI-Light.woff') format('woff'),
-		url('SegoeUI-Light.ttf') format('truetype');
-	font-weight: 300;
+	src: url('./fonts/SegoeUI-Light.eot');
+	src: local('./fonts/Segoe UI Light'), local('./fonts/SegoeUI-Light'),
+		url('./fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/SegoeUI-Light.woff') format('woff'),
+		url('./fonts/SegoeUI-Light.ttf') format('truetype');
+	font-weight: 300 400;
 	font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'Futura PT';
+    font-family: 'FuturaPT-Medium';
     src: url('./fonts/FuturaPT-Medium.eot');
     src: local('./fonts/Futura PT Medium'), local('./fonts/FuturaPT-Medium'),
         url('./fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
         url('./fonts/FuturaPT-Medium.woff') format('woff'),
         url('./fonts/FuturaPT-Medium.ttf') format('truetype');
-    font-weight: 2
-    00;
+    font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
 	font-family: 'Forum';
-	src: url('./fonts/Forum-Regular.ttf');
-	font-weight: 300;
+	   src: url('./fonts/Forum-Regular.ttf');
+	font-weight: 400;
 	font-style: normal;
-	}
+}
+
+@font-face {
+    font-family: 'FuturaPT-Light';
+    src: url('./fonts/FuturaPT-Light.eot');
+    src: local('./fonts/Futura PT Light'), local('./fonts/FuturaPT-Light'),
+        url('./fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FuturaPT-Light.woff') format('woff'),
+        url('./fonts/FuturaPT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
 
 body {
     min-width: 320px;
@@ -49,40 +58,44 @@ body {
 }
 
 .header-title {
-	font-family: "Forum", sans-serif;
-	font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 71px;
+    font-size: 5vw;
+}
+
+.logo-container {
+    display: flex;
+    left: 10%;
+    top: 5%;
+    position: absolute;
+    width: 33%;
 }
 
 .logo {
-	padding: 70px 160px;
+    width: 100%;
 }
 
 .forum {
 	font-family: "Forum", sans-serif;
-    font-style: normal;
+    font-weight: 400;
 }
 
 .title-content {
-	width: 100%;
-	padding: 70px 160px;
 	display: flex;
-	flex-wrap: wrap;
-	align-content: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 35%;
+    left: 10%;
 }
 
 .language {
-	width: 100%;
-	padding: 70px 160px;
 	display: flex;
-    align-items: flex-end;
+    position: absolute;
+    top: 85%;
+    left: 10%;
 }
 
 .lang {
 	margin: 5px;
-	font-family: "Futura PT", sans-serif;
+    font-size: 1.3vw;
 }
 
 .lang:hover {
@@ -93,10 +106,10 @@ body {
 
  
 .line {
-    width: 140px;
-    height: 2px;
-    background-color: black;
-    margin-right: 40px;
+    width: 25%;
+    height: 1px;
+    background-color: rgba(39, 39, 39, 1);
+    margin-right: 13%;
 }
 
 .container-subtitle {
@@ -113,11 +126,7 @@ body {
 }
 
 .text {
-	font-family: "Segoe UI";
-    font-style: italic;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.5vw;
 }
 
 .black-container {
@@ -126,40 +135,78 @@ body {
     flex-wrap: wrap;
     background-color: black;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .buttons-container {
 	display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 60%;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    left: 20%;
 }
 
-.button {
-	padding: 70px 27px;
+.favorites {
+    width: 19%;
+    margin-right: 10%;
+}
+
+.profile {
+    width: 12%;
+    margin-right: 10%;
+}
+
+.shop {
+    width: 14%;
+    margin-right: 20%;
+}
+
+.menu {
+    width: 26%;
+}
+
+.favorites-img {
+    width: 100%;
+    max-height: 35px;
+    max-width: 45px;
+}
+
+.profile-img {
+    width: 100%;
+    max-height: 35px;
+    max-width: 28px;
+}
+
+.shop-img {
+    width: 100%;
+    max-height: 35px;
+    max-width: 30px;
+}
+
+.menu-img {
+    width: 100%;
+    height: 100%;
+    max-width: 55px;
 }
 
 .img-ring {
 	position: absolute;
-    top: calc(50% - 100px);
-    right: -180px;
+    top: 37%;
+    right: 26%;
+    width: 25%;
 }
 
 .ringpng {
-	width: 322px;
-    height: 170px;
-}
-
-.menu-button {
-	height: 40px;
-	width: 40px;
-	padding-left: 50px;
+	width: 100%;
 }
 
 .ring-price {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: flex-end;
-	padding: 70px 160px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 85%;
+    right: 27%;
 }
 
 .ring-text {  
@@ -167,22 +214,25 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1.7vw;
 }
 
-.futura {
-	font-family: "Futura PT";
+.futura-m {
+	font-family: "FuturaPT-Medium";
+    font-style: normal;
+}
+
+.futura-l {
+    font-family: "FuturaPT-Light";
     font-style: normal;
 }
 
 .material {
-    font-size: 18px;
-    line-height: 23px;
     color: #C2C2C2;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    font-size: 1.7vw;
 }
 
 .segoe {
@@ -191,12 +241,11 @@ body {
 }
 
 .price {
-    font-size: 18px;
-    line-height: 24px;
     color: #EFC58B;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    font-size: 1.5vw;
 }
 
 .inline {
@@ -483,7 +532,7 @@ grid-row-gap: 20px;
 
 .slider-img-style {
 	max-height: 1250px;
-	margin-left: 20px;
+	margin-left: 2%;
 }
 
 .img-size1 {
@@ -492,19 +541,19 @@ grid-row-gap: 20px;
 }
 
 .img-size2 {
-	width: 28%;
+	width: 25%;
 }
 
 .img-size3 {
-	width: 23%;
+	width: 21%;
 }
 
 .img-size4 {
-	width: 29%;
+	width: 27%;
 }
 
 .img-size5 {
-	width: 13%;
+	width: 11%;
 }
 
 .slider {
