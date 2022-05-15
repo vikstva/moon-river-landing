@@ -266,17 +266,16 @@ body {
 	display: flex;
 }
 
-.man {
+.gender-item {
     position: relative;
     text-align: center;
     padding-right: 20px;
-    width: 50%
+    width: 50%;
+    cursor: pointer;
 }
 
-.woman {
-    position: relative;
-    text-align: center;
-    width: 50%;
+.gender div:last-child {
+    padding-right: 0px;
 }
 
 .man-text {
@@ -363,10 +362,6 @@ body {
     padding: 10px 0px;
 }
 
-.pointer {
-	cursor: pointer;
-}
-
 .wrapper-line {
 	display: flex;
     align-items: center;
@@ -377,7 +372,6 @@ body {
 .wrapper {
 	max-width: 400px;
     display: flex;
-    height: 250px;
     margin: 155px;
     flex-wrap: wrap;
     align-content: space-between;
@@ -442,11 +436,11 @@ body {
 }
 
 .wrapper-grid {
-display: grid;
-grid-template-columns: repeat(7, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 20px;
-grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 .box1 { grid-area: 1 / 1 / 2 / 3; }
@@ -568,10 +562,14 @@ grid-row-gap: 20px;
     width: 100%;
 }
 
-.icon-link {
+.icon-links {
 	display: flex;
     width: 50%;
     align-items: center;
+}
+
+.slider img {
+    cursor: pointer;
 }
 
 .point {
@@ -697,8 +695,8 @@ grid-row-gap: 20px;
     justify-content: center;
 }
 
-.logo-footer {
-
+.social-link, .store-item, .menu-item-icon, .pointer {
+    cursor: pointer;
 }
 
 .nomber-footer {
