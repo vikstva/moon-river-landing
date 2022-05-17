@@ -134,7 +134,7 @@ body {
 	display: flex;
     flex-wrap: wrap;
     background-color: black;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     position: relative;
 }
 
@@ -256,12 +256,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     width: 100%
 }
 
 .gender {
-	padding-bottom: 20px;
+	padding-bottom: 1.5%;
 	width: 100%;
 	display: flex;
 }
@@ -269,7 +269,7 @@ body {
 .gender-item {
     position: relative;
     text-align: center;
-    padding-right: 20px;
+    padding-right: 2%;
     width: 50%;
     cursor: pointer;
 }
@@ -278,16 +278,10 @@ body {
     padding-right: 0px;
 }
 
-.man-text {
+.gender-text {
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 165px);
-}
-
-.woman-text {
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 165px);
+    top: 37%;
+    left: 22%;
 }
 
 .genderimg {
@@ -297,11 +291,10 @@ body {
 }
 
 .gender-subtitle {
-    font-family: 'Futura PT';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 24px;
-    line-height: 31px;
+    font-family: 'FuturaPT-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.9vw;
     color: white;
 }
 
@@ -309,13 +302,17 @@ body {
 	font-family: 'Forum';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 64px;
-	line-height: 71px;
+	font-size: 5vw;
 	color: white;
 }
 
 .gender-line {
-    width: 130px;
+    width: 30%;
+    left: 35%;
+    background-color: white;
+    height: 0.1px;
+    position: absolute;
+    margin: 7% 0%;
 }
 
 .map {
@@ -333,33 +330,34 @@ body {
 }
 
 .title-size {
-	font-weight: 400;
-	font-size: 48px;
-	line-height: 53px;
-	color: white;
+    font-family: 'Forum';
+    font-size: 4vw;
+    color: white;
 }
 
 .map-subtitle {
-	font-family: 'Futura PT';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 23px;
-	color: white;
-	width: 100%;
-	margin-bottom: 20px;
+	font-family: 'FuturaPT-light';
+    font-size: 1.6vw;
+    color: white;
+    width: 100%;
+    margin-bottom: 6%;
 }
 
 .address {
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 23px;
+    font-family: 'FuturaPT-light';
+    font-size: 1.8vw;
 	border: none;
     background-color: #272727;
     outline: none;
     width: 100%;
     color: white;
-    padding: 10px 0px;
+    padding: 3% 0%;
+}
+
+.arrow {
+    position: absolute;
+    width: 2.5%;
+    left: 37%;
 }
 
 .wrapper-line {
@@ -370,16 +368,20 @@ body {
 }
 
 .wrapper {
-	max-width: 400px;
     display: flex;
-    margin: 155px;
+    margin: 30% 20%;
     flex-wrap: wrap;
     align-content: space-between;
 }
 
 .width100 {
 	width: 100%;
-	margin: 0px;
+}
+
+.map-line {
+    width: 100%;
+    background-color: white;
+    height: 1px;
 }
 
 .maps {
@@ -404,6 +406,7 @@ body {
 .location-icon {
     position: absolute;
     cursor: pointer;
+    width: 6%;
 }
 
 .map1 {
