@@ -1,21 +1,15 @@
 @font-face {
 	font-family: 'Segoe UI';
-	src: url('./fonts/SegoeUI-Italic.eot');
 	src: local('./fonts/SegoeUI-Italic'), local('./fonts/SegoeUI-Italic'),
-		url('./fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/SegoeUI-Italic.woff') format('woff'),
-		url('./fonts/SegoeUI-Italic.ttf') format('truetype');
+		url('./fonts/SegoeUI-Italic.woff') format('woff');
 	font-weight: 300 400;
 	font-style: italic;
 }
 
 @font-face {
     font-family: 'FuturaPT-Medium';
-    src: url('./fonts/FuturaPT-Medium.eot');
     src: local('./fonts/Futura PT Medium'), local('./fonts/FuturaPT-Medium'),
-        url('./fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/FuturaPT-Medium.woff') format('woff'),
-        url('./fonts/FuturaPT-Medium.ttf') format('truetype');
+        url('./fonts/FuturaPT-Medium.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
@@ -29,21 +23,15 @@
 
 @font-face {
     font-family: 'FuturaPT-Light';
-    src: url('./fonts/FuturaPT-Light.eot');
     src: local('./fonts/FuturaPT-Light'), local('./fonts/FuturaPT-Light'),
-        url('./fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/FuturaPT-Light.woff') format('woff'),
-        url('./fonts/FuturaPT-Light.ttf') format('truetype');
+        url('./fonts/FuturaPT-Light.woff') format('woff');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FuturaPT-Book';
-    src: url('./fonts/FuturaPT-Book.eot');
     src: local('./fonts/FuturaPT-Book'), local('./fonts/FuturaPT-Book'),
-        url('./fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/FuturaPT-Book.woff') format('woff'),
-        url('./fonts/FuturaPT-Book.ttf') format('truetype');
+        url('./fonts/FuturaPT-Book.woff') format('woff');
     font-style: normal;
     }
 
@@ -97,7 +85,7 @@ body {
     position: absolute;
     top: 85%;
     left: 10%;
-    font-family: 'FuturaPT-Medium';
+    font-family: 'FuturaPT-Medium', sans-serif;
 }
 
 .lang {
@@ -134,7 +122,7 @@ body {
 
 .text {
     font-size: 1.5vw;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .black-container {
@@ -223,7 +211,7 @@ body {
     display: flex;
     justify-content: flex-end;
     font-size: 1.7vw;
-    font-family: 'FuturaPT-Light';
+    font-family: 'FuturaPT-Light', sans-serif;
 }
 
 .material {
@@ -232,7 +220,7 @@ body {
     display: flex;
     justify-content: flex-end;
     font-size: 1.7vw;
-    font-family: 'FuturaPT-Light';
+    font-family: 'FuturaPT-Light', sans-serif;
 }
 
 .price {
@@ -241,7 +229,7 @@ body {
     display: flex;
     justify-content: flex-end;
     font-size: 1.5vw;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .inline {
@@ -287,7 +275,7 @@ body {
 }
 
 .gender-subtitle {
-    font-family: 'FuturaPT-Light';
+    font-family: 'FuturaPT-Light', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.9vw;
@@ -295,7 +283,7 @@ body {
 }
 
 .gender-title {
-	font-family: 'Forum';
+	font-family: 'Forum', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 5vw;
@@ -326,13 +314,13 @@ body {
 }
 
 .title-size {
-    font-family: 'Forum';
+    font-family: 'Forum', sans-serif;
     font-size: 4vw;
     color: white;
 }
 
 .map-subtitle {
-	font-family: 'FuturaPT-light';
+	font-family: 'FuturaPT-light', sans-serif;
     font-size: 1.6vw;
     color: white;
     width: 100%;
@@ -340,7 +328,7 @@ body {
 }
 
 .address {
-    font-family: 'FuturaPT-light';
+    font-family: 'FuturaPT-light', sans-serif;
     font-size: 1.8vw;
 	border: none;
     background-color: #272727;
@@ -430,7 +418,7 @@ body {
 	padding-bottom: 2%;
 }
 
-.wrapper-grid {
+.grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 40% 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -438,17 +426,17 @@ body {
     grid-row-gap: 3%;
 }
 
-.box1 { grid-area: 1 / 1 / 2 / 2; }
-.box2 { grid-area: 2 / 1 / 3 / 2; }
-.box3 { 
+.item-grid-jows { grid-area: 1 / 1 / 2 / 2; }
+.item-grid-croix { grid-area: 2 / 1 / 3 / 2; }
+.item-grid-etoile { 
     grid-area: 1 / 2 / 3 / 3;
     display: flex;
     position: relative;
 }
-.box4 { grid-area: 1 / 3 / 2 / 4; }
-.box5 { grid-area: 2 / 3 / 3 / 4; }
+.item-grid-moon { grid-area: 1 / 3 / 2 / 4; }
+.item-grid-win { grid-area: 2 / 3 / 3 / 4; }
 
-.box-wrap {
+.box-wrapper {
     display: flex;
     flex-wrap: wrap;
     background-color: #EDEDED;
@@ -484,39 +472,39 @@ body {
     padding-left: 20%;
 }
 
-.grid-center {
+.grid-center-img-style {
 	width: 100%;
     height: 100%;
 }
 
-.grid-size1 {
+.style-text-black {
     font-size: 1.4vw;
-    font-family: 'FuturaPT-Book';
+    font-family: 'FuturaPT-Book', sans-serif;
 }
 
-.grid-size2 {
+.style-text-grey {
     font-size: 1.6vw;
     color: #757575;
-    font-family: 'FuturaPT-Light';
+    font-family: 'FuturaPT-Light', sans-serif;
 }
 
-.grid-size3 {
+.style-text-gold {
     font-size: 1.6vw;
     color: #E2B67A;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', sans-serif;
     font-style: italic;
 }
 
-.grid-center1 {
+.style-text-center-white {
     font-size: 1.4vw;
-    font-family: 'FuturaPT-Book';
-    color: #FFFFFF;
+    font-family: 'FuturaPT-Book', sans-serif;
+    color: white;
 }
 
-.grid-center2 {
+.style-text-center-grey {
     font-size: 1.6vw;
     color: #E7E7E7;
-    font-family: 'FuturaPT-Light';
+    font-family: 'FuturaPT-Light', sans-serif;
 }
 
 .section-4 {
@@ -532,7 +520,7 @@ body {
 
 .title-slider {
 	margin: 6% 12%;
-    font-family: 'Forum';
+    font-family: 'Forum', sans-serif;
     font-size: 4vw;
     color: white;
 }
