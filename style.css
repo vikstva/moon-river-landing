@@ -433,6 +433,7 @@ body {
     display: flex;
     position: relative;
 }
+
 .grid__card-moon { grid-area: 1 / 3 / 2 / 4; }
 .grid__card-win { grid-area: 2 / 3 / 3 / 4; }
 
