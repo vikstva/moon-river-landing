@@ -85,7 +85,6 @@ body {
     position: absolute;
     top: 85%;
     left: 10%;
-
     font-family: 'FuturaPT-Medium', sans-serif;
 }
 
@@ -415,11 +414,11 @@ body {
     left: 37%;
 }
 
-.section-3 {
+.grid {
 	padding-bottom: 2%;
 }
 
-.grid-wrapper {
+.grid__inner {
     display: grid;
     grid-template-columns: 1fr 40% 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -427,17 +426,18 @@ body {
     grid-row-gap: 3%;
 }
 
-.item-grid-jows { grid-area: 1 / 1 / 2 / 2; }
-.item-grid-croix { grid-area: 2 / 1 / 3 / 2; }
-.item-grid-etoile { 
+.grid__card-jows { grid-area: 1 / 1 / 2 / 2; }
+.grid__card-croix { grid-area: 2 / 1 / 3 / 2; }
+.grid__card-etoile { 
     grid-area: 1 / 2 / 3 / 3;
     display: flex;
     position: relative;
 }
-.item-grid-moon { grid-area: 1 / 3 / 2 / 4; }
-.item-grid-win { grid-area: 2 / 3 / 3 / 4; }
 
-.box-wrapper {
+.grid__card-moon { grid-area: 1 / 3 / 2 / 4; }
+.grid__card-win { grid-area: 2 / 3 / 3 / 4; }
+
+.grid__card-cell {
     display: flex;
     flex-wrap: wrap;
     background-color: #EDEDED;
@@ -445,64 +445,64 @@ body {
     position: relative;
 }
 
-.img-wrap {
+.grid__image-wrapper {
     position: absolute;
     width: 70%;
 }
 
-.box-text {
+.grid__card-text {
 	position: absolute;
     top: 70%;
     left: 5%;
     line-height: 1.5;
 }
 
-.img-top {
+.grid__image-wrapper--top {
     top: 12%;
 }
 
-.box-text-center {
+.grid__text-central-card {
     line-height: 1.5;
     position: absolute;
     top: 85%;
     left: 5%;
 }
 
-.grid-border {
+.grid__image {
     width: 100%;
     padding-left: 20%;
 }
 
-.grid-center-img-style {
+.grid__image--central {
 	width: 100%;
     height: 100%;
 }
 
-.style-text-black {
+.grid__title {
     font-size: 1.4vw;
     font-family: 'FuturaPT-Book', sans-serif;
 }
 
-.style-text-grey {
+.grid__description {
     font-size: 1.6vw;
     color: #757575;
     font-family: 'FuturaPT-Light', sans-serif;
 }
 
-.style-text-gold {
+.grid__price {
     font-size: 1.6vw;
     color: #E2B67A;
     font-family: 'Segoe UI', sans-serif;
     font-style: italic;
 }
 
-.style-text-center-white {
+.grid__central-card-title {
     font-size: 1.4vw;
     font-family: 'FuturaPT-Book', sans-serif;
     color: white;
 }
 
-.style-text-center-grey {
+.grid__central-card-description {
     font-size: 1.6vw;
     color: #E7E7E7;
     font-family: 'FuturaPT-Light', sans-serif;
