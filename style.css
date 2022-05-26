@@ -327,9 +327,9 @@ body {
     margin-bottom: 6%;
 }
 
-.address {
+.address, .footer__input-main {
     font-family: 'FuturaPT-light', sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
 	border: none;
     background-color: #272727;
     outline: none;
@@ -344,7 +344,7 @@ body {
     left: 37%;
 }
 
-.wrapper-line {
+.wrapper-line, .footer__input {
 	display: flex;
     align-items: center;
     width: 100%;
@@ -677,70 +677,98 @@ body {
 .footer {
 	background-color: #272727;
 	display: flex;
-	width: 100%;
+	width: 86%;
 	flex-wrap: wrap;
+    padding: 0 7% 3%;
+    font-size: 1.2vw;
+    color: white;
+    font-family: 'FuturaPT-Book';
 }
 
-.footer-size {
-	font-size: 14px;
-	line-height: 18px;
+.footer__number-title, .footer__input-title {
+	font-size: 1.2vw;
+	font-family: 'FuturaPT-Book';
 	color: white;
 }
 
-.rubric {
+.footer__rubric {
 	display: flex;
-	width: 100%;
-	justify-content: space-evenly;
-    margin: 70px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 6% 0;
 }
 
-.link-footer {
+.footer__bottom {
 	display: flex;
 	width: 100%;
-    padding-bottom: 70px
 }
 
-.links {
+.footer__contacts {
     display: flex;
     width: 50%;
 }
 
-.logo-wrapper {
+.footer__logo-inner {
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.social-link, .store-item, .menu-item-icon, .contacts__arrow {
+.footer__logo {
+    width: 40%;
+}
+
+.footer__link, .footer__store--img, .menu-item-icon, .contacts__arrow {
     cursor: pointer;
 }
 
-.social-link {
+.footer__link--img {
     cursor: pointer;
-    width: 8%;
-    margin: 0 2%;
+    width: 12%;
+    margin: 3% 3% 0 0;
 }
 
-.nomber-footer {
+.footer__link {
+    width: 100%;
+}
+
+.footer__number {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-start;
 }
 
-.nomber-style {
+.footer__number-main {
     width: 100%;
     color: #C2C2C2;
-    padding: 10px 0px;
+    padding: 5% 0;
 }
 
-.e-mail-footer {
+.footer__input-e-mail {
     display: flex;
     width: 100%;
+    justify-content: flex-end;
 }
 
-.store {
+.footer__input-arrow {
+    width: 10%;
+}
+
+.footer__store--img {
+    width: 35%;
+    padding-right: 5%;
+}
+
+.footer__input-line {
+    width: 100%;
+    background-color: white;
+    height: 1px;
+}
+
+.footer__store {
     display: flex;
-    margin: 10px 0px;
+    margin-top: 5%;
+    width: 100%;
 }
