@@ -143,22 +143,22 @@ body {
 }
 
 .black__favorites {
-    width: 19%;
-    margin-right: 10%;
+    width: 9%;
+    margin-right: 8%;
 }
 
 .black__profile {
-    width: 12%;
-    margin-right: 10%;
+    width: 6%;
+    margin-right: 8%;
 }
 
 .black__shop {
-    width: 14%;
+    width: 7%;
     margin-right: 20%;
 }
 
 .black__menu {
-    width: 26%;
+    width: 13%;
 }
 
 .black__favorites--img {
@@ -187,9 +187,9 @@ body {
 
 .page__ring {
 	position: absolute;
-    top: 37%;
-    right: 26%;
-    width: 25%;
+    top: 39%;
+    right: 31%;
+    width: 16%;
 }
 
 .page__ring-image {
